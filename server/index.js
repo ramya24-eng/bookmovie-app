@@ -20,7 +20,8 @@ const allowedOrigins = ['https://bookmovie-app.vercel.app',
 const options = {
   origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  allowedHeaders: ['Content-Type', 'Authorization'],  // Ensure Authorization header is allowed
+  credentials: false,
 };
 
 app.use(cors(options));

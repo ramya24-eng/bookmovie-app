@@ -14,7 +14,8 @@ const theatreRoute = require('./routes/theatreRoute')
 const showRoute = require('./routes/showRoute')
 const bookingRoute = require('./routes/bookingRoute')
 
-const allowedOrigins = ['https://bookmovie-app.vercel.app/'];
+const allowedOrigins = ['https://bookmovie-app.vercel.app',
+                        'https://bookmovie-app-server.vercel.app'];
 
 const options = {
   origin: allowedOrigins,

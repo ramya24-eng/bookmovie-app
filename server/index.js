@@ -14,8 +14,17 @@ const theatreRoute = require('./routes/theatreRoute')
 const showRoute = require('./routes/showRoute')
 const bookingRoute = require('./routes/bookingRoute')
 
+const allowedOrigins = ['https://bookmovie-app.vercel.app/'];
 
-app.use(cors())
+const options = {
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+};
+
+app.use(cors(options));
+
+//app.use(cors())
 app.use(express.json())
 app.use('/api/users' , userRoutes)
 app.use('/api/movies' , movieRoute)

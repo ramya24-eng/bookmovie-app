@@ -3,13 +3,13 @@
   "builds": [
     {
       "src": "index.js",
-      "use": "@vercel/node"  // Using Vercel’s Node.js runtime
+      "use": "@vercel/node"  
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",  // This will catch all routes and forward them to your index.js
-      "dest": "/index.js"  // or the entry point of your server
+      "src": "/(.*)",  
+      "dest": "/index.js"  
     }
   ]
 }

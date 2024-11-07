@@ -75,23 +75,12 @@ function Register() {
                   placeholder="Enter the password"
                 ></Input>
               </Form.Item>
-
-              <Form.Item>
-                <Button
-                  block
-                  type="primary"
-                  htmlType="submit"
-                  style={{ fontSize: "1rem", fontWeight: "600" }}
-                >
-                  Sign Up
-                </Button>
-              </Form.Item>
               <Form.Item
                 label="Register as a Partner"
                 htmlFor="role"
                 name="role"
                 className="d-block text-center"
-                initialValue={false}
+                initialValue={'partner'}
                 rules={[{ required: true, message: "Please select an option!" }]}
               >
                 <div className="d-flex justify-content-start">
@@ -103,6 +92,16 @@ function Register() {
                     <Radio value={'user'}>No</Radio>
                   </Radio.Group>
                 </div>
+              </Form.Item>
+               <Form.Item>
+                <Button
+                  block
+                  type="primary"
+                  htmlType="submit"
+                  style={{ fontSize: "1rem", fontWeight: "600" }}
+                >
+                  Sign Up
+                </Button>
               </Form.Item>
             </Form>
             <div>

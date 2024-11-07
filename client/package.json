@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://bookmovie-app-server-ramya24-engs-projects.vercel.app"
+  "proxy": "https://bookmovie-app-server.vercel.app"
 }
